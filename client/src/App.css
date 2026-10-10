@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;700;800&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fffdf8;color:#21392d;font-family:'DM Sans',sans-serif}
+a{text-decoration:none;color:inherit}
+.navbar{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;background:white;border-bottom:1px solid #eee}
+.brand{font-size:24px;font-weight:800;color:#285640}
+.navlinks{display:flex;gap:25px;font-size:14px}
+.hero{padding:65px 7%;background:#edf2e8;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.hero h1{font:800 clamp(36px,5vw,58px) Manrope,sans-serif;line-height:1.15;margin:16px 0}
+.hero>div:first-child>p:not(.eyebrow){line-height:1.8;color:#667568}
+.eyebrow{color:#b56c42;letter-spacing:2px;font-size:11px;font-weight:700}
+.primary{display:inline-block;padding:13px 20px;border:0;border-radius:7px;background:#285640;color:white;font-weight:700;cursor:pointer}
+.hero-art{min-height:260px;border-radius:18px;background:linear-gradient(140deg,#bdd5c1,#f2ddae);display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:25px}
+.hero-art span{font-size:55px}
+.hero-art p{width:100%;text-align:center;font-weight:700}
+.searchbar{padding:25px 7%;display:flex;gap:12px;background:white}
+.searchbar input{flex:1;min-width:0;padding:13px;border:1px solid #ddd;border-radius:7px}
+.section{padding:55px 7%}
+h2{font:700 30px Manrope,sans-serif;margin:10px 0 25px}
+.tour-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tour-card{background:white;border:1px solid #eee;border-radius:12px;overflow:hidden}
+.tour-art{height:145px;display:grid;place-items:center;background:#e7eee2;font-size:65px}
+.tour-info{padding:18px}
+.tour-info>p{font-size:13px;color:#778277}
+.tour-info h3{font-size:17px}
+.tour-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid #eee;padding-top:14px}
+.tour-bottom small{font-size:11px;color:#7c877e}
+.tour-bottom button{background:#eaf0e8;border:0;padding:10px;border-radius:6px;color:#285640;font-weight:700;cursor:pointer}
+.modal{position:fixed;inset:0;background:#14291dc9;display:grid;place-items:center;padding:20px;z-index:5}
+.booking-form{background:white;border-radius:13px;padding:28px;width:min(100%,420px);display:grid;gap:14px;position:relative}
+.booking-form label{font-size:13px;font-weight:700}
+.booking-form input,.booking-form select{padding:12px;border:1px solid #ddd;border-radius:6px}
+.close{position:absolute;right:15px;top:15px;border:0;padding:8px;cursor:pointer}
+.notice{margin:20px 7%;padding:15px;background:#eaf0e8;border-radius:8px}
+.booking-row{display:flex;align-items:center;gap:15px;border-bottom:1px solid #eee;padding:15px 0}
+.booking-row>span{font-size:30px}
+.booking-row div{flex:1}
+.booking-row p{font-size:12px;color:#778277}
+footer{padding:28px 7%;background:#213d30;color:white}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding:40px 6%}.tour-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.navbar{padding:18px 5%}.navlinks{gap:12px;font-size:12px}.section{padding:40px 6%}}
+@media(max-width:460px){.tour-grid{grid-template-columns:1fr}.hero-art{min-height:190px}.navlinks a:nth-child(2){display:none}}
